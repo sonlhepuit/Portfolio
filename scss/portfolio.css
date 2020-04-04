@@ -78,7 +78,7 @@ header .container-logo img {
      object-fit: cover;
 }
 
-header .container-menu-wrap a, header .container-menu-wrap p {
+header .container-menu-wrap a {
   text-decoration: none;
   text-transform: uppercase;
   color: black;
@@ -87,7 +87,14 @@ header .container-menu-wrap a, header .container-menu-wrap p {
   position: relative;
 }
 
-header .container-menu-wrap a:after {
+header .container-menu-wrap a i {
+  color: #000;
+  opacity: 0.7;
+  filter: Alpha(opacity=70);
+  font-size: 16px;
+}
+
+header .container-menu-wrap a:not(:last-child):after {
   content: "";
   position: absolute;
   height: 2px;
@@ -103,6 +110,15 @@ header .container-menu-wrap a:hover:after {
   left: 15%;
   width: 70%;
   margin: 0 auto;
+}
+
+header .container-menu-wrap input {
+  padding-left: 10px;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid white;
 }
 
 .myblog {

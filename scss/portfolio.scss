@@ -67,15 +67,21 @@ header{
     &-menu{
       // width: 100%;
       &-wrap{
-        a,p{
+        a{
           text-decoration: none;
           text-transform: uppercase;
           color: black;
           padding: 0 20px;
           font-size: 14px;
           position: relative;
+          i{
+            color: #000;
+            opacity: 0.7;
+            filter: Alpha(opacity=70);
+            font-size: 16px;
+          }
         }
-        a:after{
+        a:not(:last-child):after{
           content: "";
           position: absolute;
           height: 2px;
@@ -84,14 +90,20 @@ header{
           background-color: black;
           width: 0;
           transition: 1s;
-          
-          
         }
         a:hover:after {
           left: 15%;
           width: 70%;
           margin: 0 auto;
           // transition: 1s;
+        }
+        input{
+          padding-left: 10px;
+          margin-left: 10px;
+          border: none;
+          outline: none;
+          background-color: $bg;
+          border-bottom: 1px solid white;
         }
       }
     }
