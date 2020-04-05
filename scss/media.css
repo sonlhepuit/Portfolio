@@ -163,6 +163,12 @@
   .myblog-wrap-row {
     width: 90%;
   }
+  .container-menu-wrap a {
+    padding: 0 15px !important;
+  }
+  .myservice-wrap {
+    width: 90%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -174,6 +180,12 @@
   }
   .myblog-wrap-row {
     width: 90% !important;
+  }
+  .container-menu {
+    display: none;
+  }
+  .container-iconbar {
+    display: block !important;
   }
 }
 
@@ -196,6 +208,10 @@
     width: 100%;
     padding: 0 20px;
     margin-bottom: 30px;
+  }
+  .myservice-wrap {
+    width: 80%;
+    padding: 0 10px;
   }
 }
 

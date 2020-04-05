@@ -10,7 +10,17 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
-
+$trang: #fff;
+$den: #000000;
+$dodo: #c0392b;
+$cam: #d35400;
+$camnhat: #e67e22;
+$vang: #f1c40f;
+$vangcam: #f39c12;
+$tim: #8e44ad;
+$xanhdatroi: #2980b9;
+$xanhlacay: #27ae60;
+$greensea: #16a085;
 $bg: #f5f5f5;
 $chumo: #919191;
 
@@ -19,9 +29,13 @@ $chumo: #919191;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  position: relative;
   .td{
     position: relative;
   }
+}
+.talc{
+  text-align: center;
 }
 .td::after{
   content: "";
@@ -107,8 +121,70 @@ header{
         }
       }
     }
+    &-iconbar{
+      font-size: 26px;
+      display: none;
+    }
   }
 }
+
+//myservice
+.myservice{
+  width: 100%;
+  background-color: $bg;
+  // height: 700px;
+  &-wrap{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    // padding: 100px 0;
+    // border: 1px solid black;
+    &-title{
+      text-align: center;
+      a{
+        color: $den;
+        text-decoration: none;
+      }
+    }
+
+    &-row{
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      padding: 100px 0;
+      justify-content: center;
+      &-item{
+        padding: 0 10px;
+        margin-bottom: 30px;
+        .boccc{
+          width: 100%;
+          margin: 0 auto;
+        box-shadow: 0 1px 5px rgba(5,5,6,.15);
+        padding: 50px 20px;
+        .myservice-wrap-row-item__icon{
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        .myservice-wrap-row-item__title{
+          text-align: center;
+          text-transform: uppercase;
+          font-size: 14px;
+          font-weight: 500;  
+          margin-bottom: 20px;      
+        }
+        .myservice-wrap-row-item__txt{
+          text-align: center;
+          font-size: 14px;
+          font-weight: 400;
+          opacity: 0.7;
+          margin-bottom: 20px;
+        }
+        }
+      }
+    }
+  }
+}
+
 
 // my blog
 .myblog{
@@ -231,8 +307,10 @@ header{
         }
       }
       &__info {
+        margin-top: 40px;
         &-item {
           display: flex;
+          padding: 10px 0;
           &__icon {
             width: 40px;
             height: 40px;
@@ -336,6 +414,162 @@ footer {
           text-transform: uppercase;
           font-size: 13px;
         }
+      }
+    }
+  }
+}
+
+
+// sidebar
+.nav__tablet-wrap {
+  max-width: 300px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($color:#000, $alpha: 0.55);
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: -100%;
+  // right: 0;
+  opacity: 0;
+  transition: 1.5s;
+  &-account {
+    background-color: #000000;
+    margin: 0 auto;
+    position: relative;
+    .closeNav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $trang;
+      font-size: 18px;
+      position: absolute;
+      top: 5px;
+      right: 20px;
+      cursor: pointer;
+      transition: 1s;
+      // padding: 5px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+    .closeNav:hover {
+      color: $trang;
+      transform: rotate(360deg);
+      background-color: rgba($color: #000, $alpha: 1);
+      border: 1px solid $trang;
+    }
+    &__icon {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      width: 120px;
+      height: 120px;
+      padding: 20px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.7;
+      }
+      i {
+        margin: 0 auto;
+        font-size: 40px;
+        color: $trang;
+        padding: 20px;
+        border-radius: 50%;
+        border: 3px solid $trang;
+      }
+    }
+    &__info {
+      text-align: center;
+      padding: 20px;
+      color: $trang;
+      cursor: pointer;
+      i {
+        margin-left: 10px;
+      }
+    }
+  }
+  &-login {
+    width: 100%;
+    // display: flex;
+    flex-direction: column;
+    // background-color: #95a5a6;
+    background-color: $trang;
+    // height: 0%;
+    display: block;
+    transition: 1s;
+    height: 0;
+    overflow: hidden;
+    // background: #c0392b;
+    a {
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      transition: 1s;
+      font-size: 14px;
+      padding-left: 50px;
+      display: block;
+      transition: 1s;
+      i {
+        margin-right: 10px;
+        // color: $trang;
+      }
+    }
+    a:hover {
+      background-color: #ecf0f1;
+    }
+  }
+  &-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    // border-bottom: 1px solid $trang;
+    a {
+      text-decoration: none;
+      padding: 15px 20px;
+      color: $trang;
+      transition: 1s;
+      font-size: 14px;
+      text-transform: uppercase;
+      border-bottom: 1px solid #919191;
+      i {
+        margin-right: 20px;
+        font-size: 18px;
+        color: $trang;
+      }
+    }
+    a:hover {
+      color: $trang;
+    }
+  }
+  &-language {
+    a {
+      text-decoration: none;
+      color: $trang;
+      display: block;
+      padding: 10px 20px;
+      border: 1px solid #919191;
+      i{
+        margin-right: 20px;
+      }
+      select {
+        margin-left: 20px !important;
+        width: 36%;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: $trang;
+        option{
+          background-color: $trang;
+          color: $den;
+        }
+        option:hover{
+          background-color: $dodo;
+        }
+      }
+      span {
+        margin-left: 50px;
       }
     }
   }

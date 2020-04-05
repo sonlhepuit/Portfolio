@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <script src="https://kit.fontawesome.com/f1bce2ab63.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./sass/education.css">
-    <link rel="stylesheet" href="./sass/inevn.css">
+    <!-- <link rel="stylesheet" href="./sass/inevn.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./scss/portfolio.css">
     <link rel="stylesheet" href="./scss/media.css">
@@ -32,12 +32,80 @@
                 <a href="#severice">Severice</a>
                 <a href="#blog">Blog</a>
                 <a href="#contact">Contact</a>
-                <a href="#"><i class="fas fa-search"></i><input type="text" placeholder="Search"></a>
+                <a class="last" href="#"><i class="fas fa-search"></i><input type="text" placeholder="Search"></a>
             </div>
+        </div>
+        <div onclick="openNav()" class="container-iconbar ">
+            <i class="fas fa-bars"></i>
         </div>
     </div>
 </header>
 <!--header end-->
+
+<!--My service start-->
+<div class="myservice">
+    <div class="myservice-wrap">
+        <div class="myservice-wrap-title">
+            <a  class="td tieude talc" href="#">my service</a>
+        </div>
+
+        <div class="myservice-wrap-row">
+            <!-- 1 item trong row service-->
+            <div class="myservice-wrap-row-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="boccc">
+                    <div class="myservice-wrap-row-item__icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="myservice-wrap-row-item__title">ux/ui design</div>
+                    <div class="myservice-wrap-row-item__txt">There are many variatio
+                        ns of pssages of Lorm available, bu in some form
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1 item trong row service-->
+            <div class="myservice-wrap-row-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="boccc">
+                    <div class="myservice-wrap-row-item__icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="myservice-wrap-row-item__title">ux/ui design</div>
+                    <div class="myservice-wrap-row-item__txt">There are many variatio
+                        ns of pssages of Lorm available, bu in some form
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1 item trong row service-->
+            <div class="myservice-wrap-row-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="boccc">
+                    <div class="myservice-wrap-row-item__icon">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <div class="myservice-wrap-row-item__title">ux/ui design</div>
+                    <div class="myservice-wrap-row-item__txt">There are many variatio
+                        ns of pssages of Lorm available, bu in some form
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1 item trong row service-->
+            <div class="myservice-wrap-row-item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="boccc">
+                    <div class="myservice-wrap-row-item__icon">
+                        <i class="fab fa-wordpress-simple"></i>
+                    </div>
+                    <div class="myservice-wrap-row-item__title">ux/ui design</div>
+                    <div class="myservice-wrap-row-item__txt">There are many variatio
+                        ns of pssages of Lorm available, bu in some form
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--My service end-->
+
 
 <!--my blog start-->
 <div class="myblog">
@@ -70,7 +138,7 @@
                     <div class="myblog-wrap-row-item__info-cmt"> <i class="far fa-comments"></i> 125 Comments</div>
                 </div>
                 <div class="myblog-wrap-row-item__txt">
-                    <span>Convert PSD to HTML,CSS</span>
+                    <span> How to convert PSD to HTML,CSS</span>
                     <a href="#">+</a>
                 </div>
             </div>
@@ -99,7 +167,7 @@
         <!-- contact me-->
         <div class="contact-wrap__gettouch">
             <div class="contact-wrap__gettouch__title">
-                <h1 class="tieude">Contact me</h1>
+                <h1 style="position: relative; text-align: left;" class="tieude td">Contact me</h1>
                 <p>
                     When you sleep and I am awake for the future</p>
             </div>
@@ -171,13 +239,54 @@
     </div>
 </footer>
 <!-- footer end-->
+
+
+<!-- menu sidebar start-->
+<div id="mySidebar" class="nav__tablet-wrap">
+    <div class="nav__tablet-wrap-account">
+        <div onclick="closeNav()" class="closeNav" title="Bấm vào để đóng">x</div>
+        <div class="nav__tablet-wrap-account__icon">
+            <img src="./images/logo.png" alt="Lê Hồng Sơn" title="Bắp Đẹp Trai">
+        </div>
+        <!-- <div  id="clickme"  class="nav__tablet-wrap-account__info">Tài khoản  <i class="fas fa-caret-down"></i></div> -->
+    </div>
+    <!-- <div class="nav__tablet-wrap-login" id="mobile-wrapLogin">
+        <a href="#"> <i class="fas fa-sign-in-alt"></i> Đăng nhập</a>
+        <a href="#"> <i class="fas fa-sign-out-alt"></i>Đăng ký</a>
+        <a href="#"> <i class="fas fa-times-circle"></i>Thoát</a>
+    </div> -->
+    <div class="nav__tablet-wrap-menu">
+        <a href="#home"> <i class="fas fa-home"></i>Home</a>
+        <a href="#about"> <i class="fas fa-info-circle"></i>About</a>
+        <a href="#portfolio"> <i class="fas fa-user-secret"></i> Portfolio</a>
+        <a href="#service"><i class="fab fa-servicestack"></i>Service</a>
+        <a href="#blog"><i class="fas fa-edit"></i>Blog</a>
+        <a href="#contact"><i class="fab fa-connectdevelop"></i>Contact</a>
+    </div>
+    <div class="nav__tablet-wrap-language">
+        <a href="#"><i class="fas fa-language"></i>LANGUAGE
+            <select name="" id="">
+                <option value="">English</option>
+                <option value="">Vietnamese</option>
+                <option value="">Russian</option>
+                <option value="">China</option>
+                <option value="">Franch</option>
+            </select>
+        </a>
+        <a href="#"><i class="fas fa-phone-volume"></i>CALL ME <span> 0398473263</span></a>
+        <a href="#"><i class="fas fa-download"></i>DOWNLOAD MY CV </a>
+    </div>
+</div>
+<!-- menu sidebar start-->
+
+
 <body>
     <!-- CDN Javascript and Bootstrap---------------------------------------------------------- start -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="js/education.js"></script>
+    <script src="js/portfolio.js"></script>
     <!-- CDN Javascript and Bootstrap---------------------------------------------------------- end  -->
 </body>
 
