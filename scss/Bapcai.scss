@@ -1,0 +1,120 @@
+///// Bộ thư viện CSS dành riêng cho bạn Lê Hồng Sơn đẹp trai
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+// Định dạng text 
+.tdcrtn{
+    text-decoration: none;
+    color: black;
+}
+.tdcrtu{
+    text-decoration: underline;
+}
+.ttfu{
+    text-transform: uppercase;
+}
+.ttfl{
+    text-transform: lowercase;
+}
+.talc{
+    text-align: center;
+}
+// Border
+.bd1{
+    border: 1px solid #DDD;
+}
+// Model box 
+.mg0a{
+    margin: 0 auto;
+}
+.mga{
+    margin: auto;
+}
+.mg5a{
+    margin: 5px;
+}
+.mg10a{
+    margin: 10px;
+}.mg15a{
+    margin: 15px;
+}.mg20a{
+    margin: 20px;
+}.mg25a{
+    margin: 25px;
+}
+.mg30a{
+    margin: 30px;
+}
+
+
+
+// display hiển thị
+.df{
+    display: flex;
+}
+.dn{
+    display: none;
+}
+.dfgiua{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jtfspb{
+    justify-content: space-between;
+}
+.jtfct{
+    justify-content: center;
+}
+.alict{
+    align-items: center;
+}

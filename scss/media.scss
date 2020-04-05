@@ -76,6 +76,9 @@
 .myservice-wrap{
     width: 90%;
 }
+.me-wrap{
+    width: 90% !important;
+}
 }
 
 
@@ -122,7 +125,31 @@
     }
     .myservice-wrap{
         width: 80%;
-        padding: 0 10px;
+        // padding: 0 10px;
+    }
+    .myservice-wrap-row-item{
+        padding: 0 20px;
+        width: 100%;
+    }
+    .me-wrap-info-contain {
+        width: 100%;
+        p{
+            text-align: center;
+        }
+    }
+    .me-wrap{
+        width: 80% !important;
+        &-info{
+            width: 100%  !important;
+            &-contain{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        &-img{
+            width: 100%  !important;
+        }
     }
 }
 @media (max-width:576px){

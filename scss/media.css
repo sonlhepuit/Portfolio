@@ -169,6 +169,9 @@
   .myservice-wrap {
     width: 90%;
   }
+  .me-wrap {
+    width: 90% !important;
+  }
 }
 
 @media (max-width: 992px) {
@@ -211,7 +214,37 @@
   }
   .myservice-wrap {
     width: 80%;
-    padding: 0 10px;
+  }
+  .myservice-wrap-row-item {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .me-wrap-info-contain {
+    width: 100%;
+  }
+  .me-wrap-info-contain p {
+    text-align: center;
+  }
+  .me-wrap {
+    width: 80% !important;
+  }
+  .me-wrap-info {
+    width: 100%  !important;
+  }
+  .me-wrap-info-contain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .me-wrap-img {
+    width: 100%  !important;
   }
 }
 
