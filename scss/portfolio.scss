@@ -405,6 +405,55 @@ header {
   }
 }
 
+
+//Portfolio
+.portfolio{
+  width: 100%;
+  .portfolio-wrap{
+    max-width: 1280px;
+    // height: 700px;
+    padding: 20px;
+    &-contain{
+      padding: 100px 0;
+      .cacmuc{
+        margin-bottom: 50px;
+        a{
+          padding: 5px 10px;
+          font-size: 14px;
+          font-weight: 400;
+          color: #6d6d6d;
+        }
+      }
+      &-cuc{
+        height: 100%;
+        .row{
+          height: 50%;
+          .col{
+            .hi{
+              height: 100%;
+              padding: 5px;
+              .col-item{
+                overflow: hidden;
+                img{
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+                img:hover{
+                  transform: scale(1.2);
+                  transition: 1s;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.ha{
+}
+
 //myservice
 .myservice {
   width: 100%;
