@@ -64,7 +64,10 @@ $bg-button: #393939;
 header {
   width: 100%;
   background-color: $bg;
+  z-index: 100;
+  transition: 2s;
   .container {
+    transition: 2s;
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
@@ -434,13 +437,67 @@ header {
               padding: 5px;
               .col-item{
                 overflow: hidden;
+                position: relative;
+                .overlay{
+                  position: absolute;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  // z-index: -1;
+                  background-color: rgba($color:#f9f9f9, $alpha: 0.6);
+                  opacity: 0;
+                  i{
+                    padding: 16px;
+                    background-color: rgba($color: #000, $alpha: 0.15);
+                    border-radius: 50%;
+                    color: $trang;
+                  }
+                }
+                .moredetail{
+                  position: absolute;
+                  width: 100%;
+                  bottom: -100%;
+                  color:  #4f4f4f;
+                  text-align: center;
+                  z-index: 2;
+                  cursor: pointer;
+                  .text{
+                    h5{
+                      font-size: 20px;
+                      font-weight: 400;
+                      color: #636363;
+                      
+                    }
+                    p{
+                      font-size: 16px;
+                      font-weight: 400;
+                      color: #767676;
+                      margin-top: 20px;
+                    }
+                  }
+                }
                 img{
                   width: 100%;
                   height: 100%;
                   object-fit: cover;
                 }
-                img:hover{
+                
+              }
+              .col-item:hover{
+                .overlay{
+                  opacity: 1;
+                  transition: 0.6s;
+                }
+                img{
                   transform: scale(1.2);
+                  transition: 1s;
+                }
+                .moredetail{
+                  bottom: 40px;
                   transition: 1s;
                 }
               }
@@ -451,8 +508,7 @@ header {
     }
   }
 }
-.ha{
-}
+
 
 //myservice
 .myservice {
@@ -511,6 +567,17 @@ header {
             font-weight: 400;
             opacity: 0.7;
             margin-bottom: 20px;
+          }
+        }
+      }
+      &-item:hover{
+        .boccc{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .myservice-wrap-row-item__icon {
+          background-color: rgba($color: #000000, $alpha: 0.7);
+          i{
+            color: $trang;
           }
         }
       }
@@ -680,7 +747,7 @@ header {
   width: 100%;
   &-wrap {
     max-width: 1280px;
-    width: 100%;
+    // width: 100%;
     margin: 0 auto;
     // border: 1px solid #ddd;
     // height: 700px;
@@ -789,13 +856,14 @@ footer {
   .container {
     background-color: $bg;
     max-width: 1280px;
-    width: 100%;
     margin: 0 auto;
     &-row {
       display: flex;
       justify-content: space-between;
       line-height: 60px;
       align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
       &-left {
         display: flex;
         align-items: center;

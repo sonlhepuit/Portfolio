@@ -129,4 +129,32 @@
     .experince-wrap-contain{
         padding: 15px 0;
     }
+    .row{  
+        flex-wrap: wrap;
+        .col{
+            flex-wrap: wrap;
+            width: 100% !important;
+            .hi{
+                // flex-wrap: wrap;
+                display: flex;
+                .col-item{
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+    .tieude{
+        font-size: 30px;
+    }
+    .me-wrap-info-contain {
+        h1{
+            font-size: 32px !important;
+        }
+        h5{
+            font-size: 16px !important;
+        }
+        p{
+            font-size: 14px !important;
+        }
+    }
 }

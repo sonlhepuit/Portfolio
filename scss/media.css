@@ -125,5 +125,34 @@
   .experince-wrap-contain {
     padding: 15px 0;
   }
+  .row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .row .col {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100% !important;
+  }
+  .row .col .hi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .row .col .hi .col-item {
+    width: 100% !important;
+  }
+  .tieude {
+    font-size: 30px;
+  }
+  .me-wrap-info-contain h1 {
+    font-size: 32px !important;
+  }
+  .me-wrap-info-contain h5 {
+    font-size: 16px !important;
+  }
+  .me-wrap-info-contain p {
+    font-size: 14px !important;
+  }
 }
 /*# sourceMappingURL=media.css.map */
