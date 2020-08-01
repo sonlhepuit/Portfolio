@@ -29,6 +29,14 @@ html {
   color: black;
 }
 
+input {
+  outline: none;
+}
+
+textarea {
+  outline: none;
+}
+
 .talc {
   text-align: center;
 }
